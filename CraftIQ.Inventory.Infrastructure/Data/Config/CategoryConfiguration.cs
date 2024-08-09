@@ -1,18 +1,18 @@
-﻿using CraftIQ.Inventory.Core.Entities;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+using CraftIQ.Inventory.Core.Entities;
 
 namespace CraftIQ.Inventory.Infrastructure.Data.Config
 {
-    public class ProductConfiguration : IEntityTypeConfiguration<Product>
+    public class CategoryConfiguration : IEntityTypeConfiguration<Category>
     {
-       
-        public void Configure(EntityTypeBuilder<Product> builder)
+        public void Configure(EntityTypeBuilder<Category> builder)
         {
             builder.Property(p => p.Id)
-                .ValueGeneratedOnAdd();
+                   .ValueGeneratedOnAdd();
 
-            builder.Property(p => p._ProductId)
+            builder.Property(p => p._CategoryId)
                     .IsRequired();
 
             builder.Property(p => p.Name)
