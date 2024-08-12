@@ -10,7 +10,7 @@
         public DateTimeOffset ExpectedDeliveryDate { get; set; }
         public int OrderType { get; set; }
         public DateTimeOffset ReceivedDate { get; set; }
-
+        // One Order Many OrderDetaail
         public List<OrderDetail> OrderDetails { get; set; } = new();
     }
 }

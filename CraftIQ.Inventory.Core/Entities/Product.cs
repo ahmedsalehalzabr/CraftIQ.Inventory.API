@@ -1,4 +1,5 @@
 ﻿using System.Transactions;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CraftIQ.Inventory.Core.Entities
 {
@@ -32,6 +33,7 @@ namespace CraftIQ.Inventory.Core.Entities
         public Transaction Transaction { get; set; } = new();
 
         // relation with order details
+         //  One Product Many OrderDetaail
         public List<OrderDetail> OrderDetails { get; set; } = new();
     }
 }
