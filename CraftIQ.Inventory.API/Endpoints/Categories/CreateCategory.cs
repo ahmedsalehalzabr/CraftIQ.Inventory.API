@@ -14,6 +14,7 @@ namespace CraftIQ.Inventory.API.Endpoints.Categories
             var oResult = new CreateCategoryResponse(request.Name, request.Description);
             return Ok(oResult);
         }
+        
 
         
         
