@@ -9,5 +9,20 @@
         // relation with products
         // One category Many products 
         public List<Product> Products { get; set; } = new();
+
+        public Category() // EF Core
+        {
+            
+        }
+        public Category(string name, string description)
+        {
+            _CategoryId = Guid.NewGuid();
+            Name = name;
+            Description = description;
+            CreatedBy = Guid.Empty;
+            CreatedOn = DateTimeOffset.Now;
+            ModifiedBy = Guid.Empty;
+            ModifiedOn = DateTimeOffset.Now;
+        }
     }
 }
