@@ -10,6 +10,7 @@
         public string Notes { get; set; } = string.Empty;
 
         //relation with products
+        // One Transaction Many Products 
         public List<Product> Products { get; set; } = new();
     }
 }

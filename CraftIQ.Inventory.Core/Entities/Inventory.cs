@@ -12,6 +12,7 @@
         public DateTimeOffset LastUpdated { get; set; }
 
         // relation with products
+        // One inventory Many products 
         public List<Product> Products { get; set; } = new();
     }
 }

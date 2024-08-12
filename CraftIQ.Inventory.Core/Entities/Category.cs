@@ -7,6 +7,7 @@
         public string Description { get; set; } = string.Empty;
 
         // relation with products
+        // One category Many products 
         public List<Product> Products { get; set; } = new();
     }
 }

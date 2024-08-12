@@ -17,14 +17,17 @@ namespace CraftIQ.Inventory.Core.Entities
         public decimal ProductionCost { get; set; }
 
         //relation with category
+        //Many products One category
         public int CategoryId { get; set; }
         public Category Category { get; set; } = new();
 
         //relation with Inventory
+        //Many products One inventory
         public int InventoryId { get; set; }
         public Inventory Inventory { get; set; } = new();
 
         //relation with Transactions
+        //Many Products One Transaction
         public int TransactionId { get; set; }
         public Transaction Transaction { get; set; } = new();
 

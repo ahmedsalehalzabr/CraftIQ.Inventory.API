@@ -5,7 +5,7 @@
           public Guid _OrderDetailId { get; set; }
         public int Quantity { get; set; }
         public decimal TotalPrice { get; set; }
-
+        // Many-to-Many => Product and Order 
         //relation with orders
         public int OrderId { get; set; }
         public Order Order { get; set; } = new();
