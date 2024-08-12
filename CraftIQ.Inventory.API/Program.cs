@@ -6,6 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 // adding db context registration
 var inventoryDbConnectionString = builder.Configuration.GetSection("ConnectionStrings:InventoryDbConnection");
 builder.Services.AddInventoryDbContext(inventoryDbConnectionString.Value!);
+
+builder.Services.AddInfrastructureRegistrations();
 //builder.Services.AddInfrastructureRegistrations();
 
 builder.Services.AddControllers();
