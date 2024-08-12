@@ -1,10 +1,7 @@
-﻿using CraftIQ.Inventory.Core.Entities;
-using huzcodes.Endpoints.Abstractions;
+﻿using huzcodes.Endpoints.Abstractions;
 using huzcodes.Extensions.Exceptions;
 using huzcodes.Persistence.Interfaces.Repositories;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Net;
 
 namespace CraftIQ.Inventory.API.Endpoints.Categories
 {
