@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="huzcodes.Extensions" Version="1.3.0" />
     <PackageReference Include="huzcodes.Persistence" Version="1.3.0" />
   </ItemGroup>
 

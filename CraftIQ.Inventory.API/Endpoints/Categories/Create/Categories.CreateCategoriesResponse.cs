@@ -1,11 +1,11 @@
-﻿namespace CraftIQ.Inventory.API.Endpoints.Categories
+﻿namespace CraftIQ.Inventory.API.Endpoints.Categories.Create
 {
-    public class CreateCategoryResponse
+    public class CreateCategoriesResponse
     {
         public string Name { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
 
-        public CreateCategoryResponse(string name, string description)
+        public CreateCategoriesResponse(string name, string description)
         {
             Name = name;
             Description = description;
